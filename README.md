@@ -1,5 +1,5 @@
-# Kavin's Website
-Kavin's portfolio website
+# Portfolio Website
+ Portfolio website
 
 ## Stack
 1. HTML
