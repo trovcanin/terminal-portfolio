@@ -38,13 +38,14 @@ const helpCommands = [
     description: "Change to colorful background",
   },
   {
-    command:'clear',
-    description: "Clear the terminal",
-  },
-  {
     command:'retro',
     description: "Switch back to retro theme!",
   },
+  {
+    command:'clear',
+    description: "Clear the terminal",
+  }
+  
 ];
 
 
@@ -53,10 +54,10 @@ const helpCommands = [
 //PROJEKTI================================================
 const projects = [
   {
-    name: "Project1",
+    name: "REST API Users",
     description:
-      "Project1 description",
-    stack: ["Stack1", "Stack2"],
+      "REST API Users",
+    stack: ["NodeJS", "Express", "EJS"],
     link: "https://github.com/trovcanin",
     image: "enship.jpeg",
     // largeImage: "enship-lg.png",
@@ -64,10 +65,10 @@ const projects = [
     project:"link"
   },
   {
-    name: "Project2",
+    name: "Puppeteer Form Spammer",
     description:
-      "Project2 description",
-    stack: ["Stack1", "Stack2"],
+      "Puppeteer Form Spammer",
+    stack: ["NodeJS", "Express"],
     link: "https://github.com/trovcanin",
     image: "ndss.png",
     // largeImage: "ndss-lg.png",
@@ -75,52 +76,22 @@ const projects = [
     project:"link"
   },
   {
-    name: "Project3",
+    name: "File Metadata Microservice",
     description:
-      "Project3 description",
-    stack: ["Stack1", "Stack2", "Stack3", "Stack4"],
+      "File Metadata Microservice",
+    stack: ["NodeJS", "Express"],
     link: "https://github.com/trovcanin",
     // image: "cognizer.png",
     code:"link",
     project:"link"
   },
   {
-    name: "Project4",
+    name: "Node Internet Speed Test",
     description:
-      "Project4 description",
-    stack: ["Stack1", "Stack2", "Stack3"],
+      "Node Internet Speed Test",
+    stack: ["NodeJS", "speedtest-npm"],
     link: "https://github.com/trovcanin",
     // image: "exun.png",
-    code:"link",
-    project:"link"
-  },
-  {
-    name: "Project5",
-    description:
-      "Project5 description",
-    stack: ["Stack1", "Stack2", "Stack3"],
-    link: "https://github.com/trovcanin",
-    // image: "cbse.png",
-    code:"link",
-    project:"link"
-  },
-  {
-    name: "Project6",
-    description:
-      "Project6 description",
-    stack: ["Stack1", "Stack2"],
-    link: "https://github.com/trovcanin",
-    // image: "task-bot.png",
-    code:"link",
-    project:"link"
-  },
-  {
-    name: "Project7",
-    description:
-      "Project7 description",
-    stack: ["Stack1", "Stack2"],
-    link: "https://github.com/trovcanin",
-    // image: "kke.jpeg",
     code:"link",
     project:"link"
   }
@@ -140,11 +111,6 @@ const contactMediums = [
     username: "tarik@tarikrovcan.com",
     link: "mailto:tarik@tarikrovcan.com",
   },
-  // {
-  //   medium: "facebook",
-  //   username: "tarik.rovcan",
-  //   link: "https://www.facebook.com/kavin.valli.25/",
-  // },
   {
     medium: "linkedin",
     username: "tarik.rovcanin",
@@ -190,14 +156,16 @@ const contents = {
   `,
 
   projects:
-    `<h3>My Projects (You can scroll)</h3>` +
+    `<h3>My Projects ↓</h3>` +
     projects
       .map(
         (project) => `<div class="command">
-        <a href="${project.link}" target="_blank"><b class="command">${
+        <b class="command">${
           project.name
-        }</b></a> - <b>${project.stack.join(", ")}</b>
+        }</b> - <b>${project.stack.join(", ")}</b> -> <<a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:blue"><code><b class="command"></b>code</a>>
+        <<a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:blue"><project><b class="command"></b>project</a>>
           <p class="meaning">${project.description}</p>
+          
         
 
       </div>`
