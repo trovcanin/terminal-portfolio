@@ -97,8 +97,6 @@ const projects = [
   }
 ];
 
-
-
 //CONTACT ======================================================================
 const contactMediums = [
   {
@@ -117,8 +115,6 @@ const contactMediums = [
     link: "https://www.linkedin.com/in/tarik-rovcanin/",
   },
 ];
-
-
 
 //HELP ==================================================================
 const contents = {
@@ -142,11 +138,6 @@ const contents = {
     <br /><br />
     
   `,
-  
-  // education: `I am a Grade 11 student at <a href="https://dpsrkp.net" target="_blank">Delhi Public School, R.K. Puram<\a>
-  //   <br />
-  //   I am a member of <a href="https://enship-club.github.io" target="_blank">Enship</a> and <a href="https://exunclan.com">Exun Clan</a>, the Tech Club.`,
-  
     skills: `
   <br />
   <div class="skill"><b>core</b>: HTML, CSS, Javascript and Node.js<br /></div>
