@@ -122,9 +122,10 @@ const contents = {
   help: //terminal.css
     helpCommands
       .map(
-        (command) => `<div class="help-flex"> 
+        (command) => `
+       <div class="help-flex"> 
        <b> <p class="command">${command.command}</p> </b>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
-        <p class="meaning">${command.description}</p>
+       <p class="meaning">${command.description}</p>
       </div>`
       )
       .join("") +
@@ -132,7 +133,7 @@ const contents = {
       <div class="command">Type one of the above commands. For eg. <b><span style="color: var(--secondary)">about</span></b></div>`,
   
       about: ` <br/>
-    My name is Tarik Rovcanin and I\'m a fullstack web developer.
+    My name is Tarik Rovcanin and I\'m a fullstack developer.
     <br/>
     I love coding in Javascript, and have worked with frameworks like ReactJS, NodeJS, Express, and Puppeteer.
     <br /><br />
@@ -157,8 +158,6 @@ const contents = {
         <<a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:blue"><project><b class="command"></b>project</a>>
           <p class="meaning">${project.description}</p>
           
-        
-
       </div>`
 
       )
