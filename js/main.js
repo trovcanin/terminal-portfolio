@@ -84,7 +84,7 @@ const exitScreen = () => {
 //==================================================
 const downloadCV = () => {
   
-  window.location = "./tarikcv.pdf"
+  window.location = "assets/tarikcv.pdf"
 }
 
 function submitListener(e) {
