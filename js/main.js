@@ -180,6 +180,7 @@ function submitListener(e) {
       case "tryhackme":
       renderTryhackme();
       break;
+      
   }
   renderNewForm();
 }
