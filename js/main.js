@@ -53,39 +53,69 @@ const renderCommandNotFound = () => {
   output(errorDiv);
 };
 
+//certifications
+const renderCertifications = () => {
+  const certificationsDiv = createContentElement(contents.certifications);
+  output(certificationsDiv);
+};
+
+//linkedin
+const renderLinkedin = () => {
+  const linkedinDiv = createContentElement(contents.linkedin);
+  output(linkedinDiv);
+};
+
+//email
+const renderEmail = () => {
+  const emailDiv = createContentElement(contents.email);
+  output(emailDiv);
+};
+
+//github
+const renderGithub = () => {
+  const githubDiv = createContentElement(contents.github);
+  output(githubDiv);
+};
+
+//tryhackme
+const renderTryhackme = () => {
+  const tryhackmeDiv = createContentElement(contents.tryhackme);
+  output(tryhackmeDiv);
+};
+
 //toggle theme
 //================================================
-const toggleThemeHacker = () => {
-  body.classList.remove("colorful-theme");
-  body.classList.add("hacker-theme");
-}
-const toggleThemeColorful = () => {
+// const toggleThemeHacker = () => {
+//   body.classList.remove("colorful-theme");
+//   body.classList.add("hacker-theme");
+// }
+// const toggleThemeColorful = () => {
   
-  body.classList.remove("hacker-theme");
-  body.classList.add("colorful-theme");
-}
-const retroTheme = () => {
+//   body.classList.remove("hacker-theme");
+//   body.classList.add("colorful-theme");
+// }
+// const retroTheme = () => {
   
-  if(body.classList[0] === ("hacker-theme")){
+//   if(body.classList[0] === ("hacker-theme")){
     
-    body.classList.remove("hacker-theme");
-  }
-  else if(body.classList[0] === ("colorful-theme")) {
-    body.classList.remove("colorful-theme");
-  }
-}
+//     body.classList.remove("hacker-theme");
+//   }
+//   else if(body.classList[0] === ("colorful-theme")) {
+//     body.classList.remove("colorful-theme");
+//   }
+// }
 //==================================================
 
 //collapse screen NE RADI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-const exitScreen = () => {
-  console.log('KONZOLA UGASENA!!!!!!!!!!!')
-  terminal.classList.add('collapse');
-}
+// const exitScreen = () => {
+//   console.log('KONZOLA UGASENA!!!!!!!!!!!')
+//   terminal.classList.add('collapse');
+// }
 //==================================================
-const downloadCV = () => {
+// const downloadCV = () => {
   
-  window.location = "assets/tarikcv.pdf"
-}
+//   window.location = "assets/tarikcv.pdf"
+// }
 
 function submitListener(e) {
   e.preventDefault();
@@ -118,10 +148,12 @@ function submitListener(e) {
       toggleThemeColorful();
       break;
       case "linkedin":
-      window.open("https://www.linkedin.com/in/tarik-rovcanin/", "_blank");
+      // window.open("https://www.linkedin.com/in/tarik-rovcanin/", "_blank");
+      renderLinkedin();
       break;
       case "github":
       window.open("https://github.com/trovcanin", "_blank");
+      
       break;
       case "projects":
       renderProjects();
@@ -134,6 +166,19 @@ function submitListener(e) {
       break;
       default:
       renderCommandNotFound();
+      break;
+
+      case"certs":
+      renderCertifications();
+      break;
+      case "email":
+      renderEmail();
+      break;
+      case "github":
+      renderGithub();
+      break;
+      case "tryhackme":
+      renderTryhackme();
       break;
   }
   renderNewForm();

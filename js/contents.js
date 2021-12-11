@@ -55,6 +55,17 @@ const helpCommands = [
   
 ];
 
+// const certifications = [
+//   {
+//     cert: "CompTIA Pentest+ THM"
+//   },
+//   {
+//     cert:"Complete Beginner THM"
+//   }
+  
+  
+// ];
+
 
 
 
@@ -140,13 +151,67 @@ const contents = {
     <br /><br />
     
   `,
-    skills: `
+    certifications: `
+  <br />
+  <div class="skill">CompTIA Pentest+ THM</div>
+  <div class="skill">Complete Beginner THM<br /></div>
+  <div class="skill">Presecurity Learning Path THM</div>
+  <div class="skill">Web Fundamentals THM</div>
+  <div class="skill">Jr. Penetration Tester THM</div>
+  <div class="skill">Cyber Defense THM</div>
+  <div class="skill">Responsive Web Design FCC</div>
+  <div class="skill">Javascript Algorithms and Data Structures FCC</div>
+  <div class="skill">Front End Development Libraries FCC</div>
+  <div class="skill">Back End Development APIs FCC</div>
+  <div class="skill">Scientific Computing with Python FCC</div>
+  
+  <br />
+  `,
+  linkedin:`
+  <br />
+  <div class="linkedin">Opening linkedin...</div>
+  
+  <br />
+  `,
+  github:`
+  <br />
+  <div class="linkedin">Opening github...</div>
+  
+  <br />
+  `,
+  email:`
+  <br />
+  <div class="linkedin">Opening linkedin... tarik@tarikrovcan.com</div>
+  
+  <br />
+  `,
+  tryhackme:`
+  <br />
+  <div class="linkedin">Opening tryhackme...</div>
+  
+  <br />
+  `,
+
+  skills: `
   <br />
   <div class="skill"><b>core</b>: HTML, CSS, Javascript and Node.js<br /></div>
   <div class="skill"><b>frameworks</b>: Express, React, Pupeteer<br /></div>
   <div class="skill"><b>database</b>: MongoDB, mongoose<br /></div>
   <br />
-  `,
+  `
+  // certifications: '<br>'+//terminal.css
+  // certifications
+  //   .map(
+  //     (cert) => `
+     
+  //    <div> 
+     
+  //     <p class="certifications">${cert.cert}</p> 
+   
+  //   </div>`
+  //   )
+    
+    ,
 
   projects:
     `<h3>My Projects ↓</h3>` +
