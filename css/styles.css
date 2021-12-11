@@ -1,41 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css");
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Fira Code", sans-serif;
+  font-family: "Cascadia Code", sans-serif;
   
 }
+
 .portfolio_top{
   color:#fff;
 }
 .vrh{
-  color:#433674
+  color:#9a9a9b
 }
 h1,h2,h3,h4,h5 {
-  font-size:20px;
+  font-size:18px;
   font-weight: normal;
   /* padding:0 !important;
   margin:0 !important; */
 }
 
+
 body{
-  font-size:20px;
+  font-size:18px;
   font-weight: normal;
   /* padding:0 !important;
   margin:0 !important; */
-  background-color: #031e11;
-  color: var(--text-color);
+  background-color: black;
+
+  color: white;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.2;
   animation: pulse 5s linear infinite;
-  margin-bottom:150px; 
+   
 }
 
 h1 {
   color: var(--primary);
   font-size: 20px; /* promijenio sa 50*/
-  margin-bottom: 20px;
+  /* margin-bottom: 10px; */
+  
 }
 
 h2 {
@@ -43,7 +48,8 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
+  padding:5px;
 }
 
 a {
@@ -104,14 +110,21 @@ input {
 
 .command {
   font-size: 15px;
+  
+  
 }
+
 
 .help-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between !important;
+  max-width:500px;
 }
 
-@keyframes blink {
+
+
+
+/* @keyframes blink {
   from,
   to {
     color: transparent;
@@ -119,7 +132,7 @@ input {
   50% {
     color: var(--primary);
   }
-}
+} */
 
 /**/
 
@@ -128,17 +141,14 @@ input{
   
 }
 
-.prompt{
-  color: #fff !important;
-  font-size: 20px !important;
-  
-}
 
 #terminal{
   padding-left:20px;
   padding-right:10px;
+  
   /* transform: skewX(0.5deg); */
-  animation: skew 5s linear infinite; /* ANIMACIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+  /* animation: skew 5s linear infinite; ANIMACIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+  margin-bottom:120px;
 }
 
 #command-input{
@@ -155,7 +165,7 @@ input{
 
 /*                         RETRO LOOK                                  */
 /*=====================================================================*/
-.scanlines {
+/* .scanlines {
   top: 0;
   left: 0;
   height: 100%;
@@ -170,8 +180,8 @@ input{
   background-size: 100% .3rem;
   position: fixed;
   pointer-events: none;
-}
-.scanlines:before {
+} */
+/* .scanlines:before {
 position: absolute;
 top: 0px;
 width: 100%;
@@ -184,18 +194,18 @@ background: linear-gradient(to bottom,
     rgba(255,0,0,0) 100%
 ); 
 opacity: .1;
-}
-.scanlines:after {
+} */
+/* .scanlines:after {
 box-shadow: 0 2px 6px rgba(25,25,25,0.2),
     inset 0 1px rgba(50,50,50,0.1),
     inset 0 3px rgba(50,50,50,0.05),
     inset 0 3px 8px rgba(64,64,64,0.05),
     inset 0 -5px 10px rgba(25,25,25,0.1);
-}
+} */
 /*=====================================================================*/
 
 /*FLICKERING ===========================================================*/
-.flicker {
+/* .flicker {
   position: fixed;
   top: 0;
   left: 0;
@@ -271,13 +281,13 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
 100% {
   opacity: 0.37221;
 }
-}
+} */
 
 
 /*NEKI NEPOZNATI KEYFRAMES*/
 
 
-@keyframes scanline {
+/* @keyframes scanline {
   0% {
     top: 0;
   }
@@ -285,7 +295,7 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
   100% {
     top: 100%;
   }
-}
+} */
 
 /* @keyframes skew {
   0% {
@@ -330,16 +340,16 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
   }
 } */
 
-@keyframes glow {
+/* @keyframes glow {
   50% {
     transform: scale(1.2);
   }
-}
+} */
 
 
 /*COLLAPSE===========================================*/
 
-.collapse {
+/* .collapse {
     animation: size 2s ease-out;
     animation-fill-mode: forwards;
 }
@@ -357,9 +367,9 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
     opacity: 0;
     animation: opacity 2s ease-out;
     animation-fill-mode: forwards;
-}
+} */
 
-/* The typing effect */
+/* The typing effect
 @keyframes typing {
   from {
     width: 0;
@@ -367,4 +377,6 @@ box-shadow: 0 2px 6px rgba(25,25,25,0.2),
   to {
     width: 100%;
   }
-}
+} */
+
+

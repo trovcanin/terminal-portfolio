@@ -9,6 +9,7 @@ function renderNewForm() {
   const span = document.createElement("span");
   span.className = "prompt";
   span.innerText = "[user@tarik ~]$ ➜"; //ovo sam promijenio
+  
  
   const newInput = document.createElement("input");
     
@@ -23,9 +24,10 @@ function renderNewForm() {
 //====================================================================
 
   newInput.id = "command-input";// mijenjao sam
-  newInput.autocomplete = "off";
+  
   newForm.appendChild(span);
   newForm.appendChild(newInput);
+  newInput.autocomplete = "off";
   newForm.addEventListener("submit", submitListener);
   mainElement.appendChild(newForm);
   newInput.focus();

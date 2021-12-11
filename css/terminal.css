@@ -7,24 +7,14 @@
   
 } */
 
-:root {
-  --background: #031e11;
-  --text_color: #fff
-}
 
-.hacker-theme{
-  --background: black;
-  --text_color: #79FE0C;
-}
-
-.colorful-theme{
-  --background: #211830;
-  --text_color: #22eae0;
-}
 
 body{
-  background-color: var(--background);
-  color: var(--text_color);
+  /* background-color: black; */
+  background-color: #01013b;
+background-image: linear-gradient(90deg, #01013b 60%, #010108 100%);
+
+  color: #45D298;
 }
 /* .prompt {
   color: #8be9fd;
@@ -87,31 +77,106 @@ input {
   
 }
 
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: var(--primary);
-  }
+
+
+
+/*      ZADNJE SMINKANJE       */
+
+
+.home-copyright{
+  /* background:red; */
+}
+.home-welcome{
+/* background:blue; */
+}
+.home-documentation{
+  /* background:yellow; */
 }
 
-/*.wb-body {*/
-/*background-color: var(--background-color);*/
-/*}*/
+.prompt{
+  color: #fff !important;
+  font-size: 20px !important;
+  background:#b92222;
+  padding-right:10px;
+  border-radius: 3px;
+  
+  
+}
 
-/*.modal {*/
-/*padding: 20px;*/
-/*}*/
-
-/*.modal p {*/
-/*margin: 20px 0;*/
-/*}*/
-
-/* a button {
-  position: fixed;
-  top: 10px;
-  bottom: auto;
-  right: 10px;
+/* .command-help{
+background:violet;
+padding:2px 4px 2px 4px;
+}
+.command-clear{
+background:sandybrown;
+padding:2px 4px 2px 4px;
 } */
+
+
+
+
+
+
+
+
+.shimmer {
+		
+		color: rgba(255, 255, 255, 0.1);
+		background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+		background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+		background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+		-webkit-background-size: 125px 100%;
+		-moz-background-size: 125px 100%;
+		background-size: 125px 100%;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		-webkit-animation-name: shimmer;
+		-moz-animation-name: shimmer;
+		animation-name: shimmer;
+		-webkit-animation-duration: 3s;
+		-moz-animation-duration: 3s;
+		animation-duration: 3s;
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@-webkit-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@-o-keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}
+
+@keyframes shimmer {
+		0% {
+				background-position: top left;
+		}
+		100% {
+				background-position: top right;
+		}
+}

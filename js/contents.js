@@ -1,49 +1,56 @@
 //HELP COMMANDS============================================
 
 const helpCommands = [
+  
+  
   {
     command: "about",
-    description: "Couple of words about me",
+    // description: "Couple of words about me",
   },
   {
     command: "skills",
-    description: "My Skills",
+    // description: "My Skills",
   },
   {
     command: "projects",
-    description: "My Projects",
+    // description: "My Projects",
   },
   {
-    command: "contact",
-    description: "Contact Me",
+    command: "certs",
+    // description: "My Certifications",
   },
+  // {
+  //   command: "contact",
+  //   // description: "Contact Me",
+  // },
+  
   {
     command: "github",
-    description: "Takes you to my github",
+    // description: "Takes you to my github",
   },
   {
     command: "linkedin",
-    description: "Takes you to my linkedin",
+    // description: "Takes you to my linkedin",
   },
   {
-    command: "resume",
-    description: "Check out my resume",
+    command: "tryhackme",
+    
   },
   {
-    command: "hacker",
-    description: "Change to hacker background",
+    command: "email",
+    // description: "Change to hacker background",
   },
-  {
-    command: "colorful",
-    description: "Change to colorful background",
-  },
-  {
-    command:'retro',
-    description: "Switch back to retro theme!",
-  },
+  // {
+  //   command: "colorful",
+  //   description: "Change to colorful background",
+  // },
+  // {
+  //   command:'retro',
+  //   description: "Switch back to retro theme!",
+  // },
   {
     command:'clear',
-    description: "Clear the terminal",
+    
   }
   
 ];
@@ -54,44 +61,34 @@ const helpCommands = [
 //PROJEKTI================================================
 const projects = [
   {
-    name: "REST API Users",
+    name: "Amazon Scraper API",
     description:
-      "REST API Users",
-    stack: ["NodeJS", "Express", "EJS"],
-    link: "https://github.com/trovcanin",
-    image: "enship.jpeg",
-    // largeImage: "enship-lg.png",
-    code:"link",
-    project:"link"
+      "Amazon Data Scraper is the easiest wat to get access to product, price, sales and reviews data from Amazon in JSON format.",
+    stack: ["NodeJS", "Express", "Scraper API"],
+    code:"https://github.com/trovcanin/amazon-scraper-api",
+    project:"https://app-amazon-scraper-api.herokuapp.com/"
+  },
+  {
+    name: "Movie Rental REST API",
+    description:
+      "Real movie rental rest api with users, clients, movies and rentals",
+    stack: ["NodeJS", "Express", "JWT", "bcrypt"],
+    code:"https://github.com/trovcanin/movie_rental_restapi",
+    project:"https://movie-rental-rest-api.herokuapp.com/"
   },
   {
     name: "Puppeteer Form Spammer",
     description:
-      "Puppeteer Form Spammer",
-    stack: ["NodeJS", "Express"],
-    link: "https://github.com/trovcanin",
-    image: "ndss.png",
-    // largeImage: "ndss-lg.png",
-    code:"link",
-    project:"link"
+      "Take a look at how to automate form submission using Puppeteer and how to use Puppeteer selectors to target form inputs",
+    stack: ["NodeJS", "Express", "Puppeteer"],
+    code:"https://github.com/trovcanin/puppeteer-form-spammer",
+    project:"https://github.com/trovcanin/puppeteer-form-spammer"
   },
   {
     name: "File Metadata Microservice",
     description:
       "File Metadata Microservice",
     stack: ["NodeJS", "Express"],
-    link: "https://github.com/trovcanin",
-    // image: "cognizer.png",
-    code:"link",
-    project:"link"
-  },
-  {
-    name: "Node Internet Speed Test",
-    description:
-      "Node Internet Speed Test",
-    stack: ["NodeJS", "speedtest-npm"],
-    link: "https://github.com/trovcanin",
-    // image: "exun.png",
     code:"link",
     project:"link"
   }
@@ -119,19 +116,23 @@ const contactMediums = [
 //HELP ==================================================================
 const contents = {
   
-  help: //terminal.css
+  help: '<br>'+//terminal.css
     helpCommands
       .map(
         (command) => `
+       
        <div class="help-flex"> 
-       <b> <p class="command">${command.command}</p> </b>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
-       <p class="meaning">${command.description}</p>
+       
+        <p class="command">${command.command}</p> 
+     
       </div>`
       )
       .join("") +
-    `<br />
-      <div class="command">Type one of the above commands. For eg. <b><span style="color: var(--secondary)">about</span></b></div>`,
-  
+    `<br>
+      <div class="command">Type one of the commands above. For eg. <b><span style="color: var(--secondary)">about</span></b>
+      
+      </div> <br>`,
+      
       about: ` <br/>
     My name is Tarik Rovcanin and I\'m a fullstack developer.
     <br/>
@@ -151,27 +152,32 @@ const contents = {
     `<h3>My Projects ↓</h3>` +
     projects
       .map(
-        (project) => `<div class="command">
+        (project) => 
+        `<br>
+        <div class="command">
         <b class="command">${
           project.name
-        }</b> - <b>${project.stack.join(", ")}</b> -> <<a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:blue"><code><b class="command"></b>code</a>>
-        <<a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:blue"><project><b class="command"></b>project</a>>
+        }</b> - <b>${project.stack.join(", ")}</b> -> <<a href="${project.code}" target="_blank" style="color:blue"><code><b class="command"></b>code</a>>
+        <<a href="${project.project}" target="_blank" style="color:blue"><b class="command"></b>website</a>>
           <p class="meaning">${project.description}</p>
           
-      </div>`
+      </div> <br>`
 
       )
       .join(""),
-
-  contact: contactMediums
+  
+  contact: '<br>'+ contactMediums
     .map(
-      (contact) => `<div class="help-flex">
-      <p class="command">${contact.medium}</p></b>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+      (contact) => `
+
+      <div class="help-flex">
+      
+      <p class="command">${contact.medium}</p></b>
       <a class="meaning" href="${contact.link}" target="_blank">${contact.username}</a>
     </div>`
     )
-    .join(""),
+    .join("") + '<br>',
   error: (input) =>
   //ERROR
-    `<div class="help-command">sh: Unknown command: ${input.value}</div><div class="help-command">See \`help\` for info`,
+    `<br><div class="help-command" style="color:red;">sh: Unknown command: ${input.value}</div><div class="help-command" style="color:red">See \`help\` for more info</div><br>`,
 };

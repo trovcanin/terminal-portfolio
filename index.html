@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
+    
     <link
       rel="shortcut icon"
       href="images/me2-circle.png"
@@ -14,59 +15,79 @@
   <body>
     <div id="terminal">
       
-      <div class="vrh" onload=" typeWriter()">  
+      <div class="vrh">  
         <div id="text" ></div>
         
-        <p>Terminal <span class="portfolio_top">Portfolio</span></p>
-        <p>[<span id="datetime"></span>]</p>
-      </div>
-    <div class="uvod">
-      <p>┌=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-┐</p>       
-      <p>|&nbsp;&nbsp;&nbsp;____&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___&nbsp;&nbsp;&nbsp;&nbsp;_&nbsp;&nbsp;__&nbsp;&nbsp;__ &nbsp;|</p>
-      <p>|&nbsp;  |_   _|&nbsp;&nbsp;/ \&nbsp;&nbsp;&nbsp;| - \&nbsp;&nbsp;| | | |/ /     &nbsp;|</p>
-      <p>|&nbsp;&nbsp;        | |&nbsp;&nbsp;/ _ \&nbsp;&nbsp;| _ /&nbsp;&nbsp;| | |&nbsp;&nbsp;&nbsp;\    &nbsp;&nbsp;|</p>
-      <p>|&nbsp;&nbsp;   |_|  /_/ \_\ |_|\_\ |_| |_|\__\    |</p>
-      <p>|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[v.2.2.6]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</p>
-      <p>└=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-┘ </p>
- 
-        <h3>Copyright (c) 2021 Tarik Rovcanin <<a class="linkedin" href="https://www.linkedin.com/in/tarik-rovcanin/">linkedin</a>><<a class="linkedin" href="mailto:tarik.rovcan@gmail.com">email</a>></h3></h3>
+        <span>
+          <p>[<span id="datetime" style="padding-right: 2px; margin-top: 20px;">
+          </span>]</p> 
+        <script src="https://tryhackme.com/badge/695923"></script>
         
-        <h3>Welcome to my terminal portfolio</h3>
-        <h3>
-          Documentation: type <span><b>'help'</b></span>.
-      </div> 
+      </div>                                             
+                        
+      <h3 class="home-welcome">Terminal Portfolio v2.5.3</h3>
+      
+     <div class="terminal-headline shimmer" style="font-size: 12px; color:#D9015B;">                                                 
+<pre>
+
+████████╗░█████╗░██████╗░██╗██╗░░██╗  ██████╗░░█████╗░██╗░░░██╗░█████╗░░█████╗░███╗░░██╗██╗███╗░░██╗
+╚══██╔══╝██╔══██╗██╔══██╗██║██║░██╔╝  ██╔══██╗██╔══██╗██║░░░██║██╔══██╗██╔══██╗████╗░██║██║████╗░██║
+░░░██║░░░███████║██████╔╝██║█████═╝░  ██████╔╝██║░░██║╚██╗░██╔╝██║░░╚═╝███████║██╔██╗██║██║██╔██╗██║
+░░░██║░░░██╔══██║██╔══██╗██║██╔═██╗░  ██╔══██╗██║░░██║░╚████╔╝░██║░░██╗██╔══██║██║╚████║██║██║╚████║
+░░░██║░░░██║░░██║██║░░██║██║██║░╚██╗  ██║░░██║╚█████╔╝░░╚██╔╝░░╚█████╔╝██║░░██║██║░╚███║██║██║░╚███║
+░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚═╝  ╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝╚═╝░░╚══╝╚═╝╚═╝░░╚══╝                                  
+                                
+</pre>
+
+                                                             
+    </div> 
+
+                                                                                                       
+    <div class="uvod">
+                        
+        <h3 class="home-copyright">Copyright (c) 2021 Tarik Rovcanin 🎉
         </h3>
+        <h3>--</h3>
+        
+        
+        <h3 class="home-documentation">
+          
+          Type <span class="command-help">'help'</span> to see a list of available commands.
+       
+        </h3>
+        <h3>--</h3>
         <main>
           <form id="command">
-            <span class="prompt">[user@tarik ~]$ ➜</span
-            ><input
+            <span class="prompt">[user@tarik ~]$ ➜</span></span>
+            <input
               type="command"
               id="command-input"
-              autofocus
+             
               autocomplete="off"
               autofocus
+              
             />
+
+          </div>
           </form>
         </main>
-        <div id="normal" style="display: none">
-
-          <audio id="audio" controls style="display:none">
-            <source src="assets/type-sound.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-          </audio>
-        </div>
         
-        <div class="flicker"></div>
-        <div class="scanlines"></div>
         
     
   </div>
-        
+       
+    <!--SKRIPTE-->
     <script src="js/contents.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/focus.js"></script>
 
-    <!-- Skripta za typing effect / zezancija-->
-    <script src="js/typingEffect.js"></script>
+  
+    
+
+
+
+
 
   </body>
 </html>
