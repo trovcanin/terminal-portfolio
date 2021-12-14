@@ -40,14 +40,18 @@ const helpCommands = [
     command: "email",
     // description: "Change to hacker background",
   },
-  // {
-  //   command: "colorful",
-  //   description: "Change to colorful background",
-  // },
-  // {
-  //   command:'retro',
-  //   description: "Switch back to retro theme!",
-  // },
+  {
+    command: "whoami",
+    
+  },
+  {
+    command:'ls',
+    
+  },
+  {
+    command:'pwd',
+    
+  },
   {
     command:'clear',
     
@@ -132,7 +136,7 @@ const contents = {
       .map(
         (command) => `
        
-       <div class="help-flex"> 
+       <div class="help-flex" style="color:#FFA500"> 
        
         <p class="command">${command.command}</p> 
      
@@ -145,59 +149,74 @@ const contents = {
       </div> <br>`,
       
       about: ` <br/>
+      <div class="about" style="color:#FFA500">
     My name is Tarik Rovcanin and I\'m a fullstack developer.
     <br/>
     I love coding in Javascript, and have worked with frameworks like ReactJS, NodeJS, Express, and Puppeteer.
     <br /><br />
+    </div>
     
   `,
     certifications: `
   <br />
-  <div class="skill">CompTIA Pentest+ THM</div>
-  <div class="skill">Complete Beginner THM<br /></div>
-  <div class="skill">Presecurity Learning Path THM</div>
-  <div class="skill">Web Fundamentals THM</div>
-  <div class="skill">Jr. Penetration Tester THM</div>
-  <div class="skill">Cyber Defense THM</div>
-  <div class="skill">Responsive Web Design FCC</div>
-  <div class="skill">Javascript Algorithms and Data Structures FCC</div>
-  <div class="skill">Front End Development Libraries FCC</div>
-  <div class="skill">Back End Development APIs FCC</div>
-  <div class="skill">Scientific Computing with Python FCC</div>
+  <div class="certs" style="color:#FFA500">
+
+  <div class="skill">CompTIA Pentest+ <span style="color:#9714DE">THM</span></div>
+  <div class="skill">Complete Beginner <span style="color:#9714DE">THM</span></div>
+  <div class="skill">Presecurity Learning Path <span style="color:#9714DE">THM</span></div>
+  <div class="skill">Web Fundamentals <span style="color:#9714DE">THM</span></div>
+  <div class="skill">Jr. Penetration Tester <span style="color:#9714DE">THM</span></div>
+  <div class="skill">Cyber Defense <span style="color:#9714DE">THM</span></div>
+  <div class="skill">Responsive Web Design <span style="color:#9714DE">FCC</span></div>
+  <div class="skill">Javascript Algorithms and Data Structures <span style="color:#9714DE">FCC</span></div>
+  <div class="skill">Front End Development Libraries <span style="color:#9714DE">FCC</span></div>
+  <div class="skill">Back End Development APIs <span style="color:#9714DE">FCC</span></div>
+  <div class="skill">Scientific Computing with Python <span style="color:#9714DE">FCC</span></div>
   
   <br />
+  </div>
   `,
   linkedin:`
   <br />
-  <div class="linkedin">Opening linkedin...</div>
+  <div class="linkedin" style="color:#FFA500">Opening linkedin...</div>
+  
+  <br />
+  `,
+  whoami:`
+  <br />
+  <div class="whoami" style="color:#FFA500">guest</div>
   
   <br />
   `,
   github:`
   <br />
-  <div class="linkedin">Opening github...</div>
+  <div class="github" style="color:#FFA500">Opening github...</div>
   
   <br />
   `,
   email:`
   <br />
-  <div class="linkedin">Opening linkedin... tarik@tarikrovcan.com</div>
+  <div class="email" style="color:#FFA500">tarik@tarikrovcan.com</div>
   
   <br />
   `,
   tryhackme:`
   <br />
-  <div class="linkedin">Opening tryhackme...</div>
+  <div class="tryhackme" style="color:#FFA500">Opening tryhackme...</div>
   
   <br />
   `,
-
+  " ":`<div class="enter"></div>
+  `
+  ,
   skills: `
   <br />
+  <div class="skills" style="color:#FFA500">
   <div class="skill"><b>core</b>: HTML, CSS, Javascript and Node.js<br /></div>
   <div class="skill"><b>frameworks</b>: Express, React, Pupeteer<br /></div>
   <div class="skill"><b>database</b>: MongoDB, mongoose<br /></div>
   <br />
+  </div>
   `
   // certifications: '<br>'+//terminal.css
   // certifications
@@ -219,7 +238,7 @@ const contents = {
       .map(
         (project) => 
         `<br>
-        <div class="command">
+        <div class="command" style="color:#FFA500">
         <b class="command">${
           project.name
         }</b> - <b>${project.stack.join(", ")}</b> -> <<a href="${project.code}" target="_blank" style="color:blue"><code><b class="command"></b>code</a>>
@@ -235,7 +254,7 @@ const contents = {
     .map(
       (contact) => `
 
-      <div class="help-flex">
+      <div class="help-flex" style="color:#FFA500">
       
       <p class="command">${contact.medium}</p></b>
       <a class="meaning" href="${contact.link}" target="_blank">${contact.username}</a>
@@ -243,6 +262,7 @@ const contents = {
     )
     .join("") + '<br>',
   error: (input) =>
+  
   //ERROR
-    `<br><div class="help-command" style="color:red;">sh: Unknown command: ${input.value}</div><div class="help-command" style="color:red">See \`help\` for more info</div><br>`,
+    `<br><div class="help-command" style="color:red;">Command "${input.value}" not recognized. </div><div class="help-command" style="color:red">Type \`help\` for more info</div><br>`,
 };

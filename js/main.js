@@ -83,6 +83,19 @@ const renderTryhackme = () => {
   output(tryhackmeDiv);
 };
 
+//whoami
+const renderWhoami = () => {
+  const whoamiDiv = createContentElement(contents.whoami);
+  output(whoamiDiv);
+};
+
+
+//enter
+const renderEnter = () => {
+  const enterDiv = createContentElement(contents.enter);
+  output(enterDiv);
+};
+
 //toggle theme
 //================================================
 // const toggleThemeHacker = () => {
@@ -152,7 +165,8 @@ function submitListener(e) {
       renderLinkedin();
       break;
       case "github":
-      window.open("https://github.com/trovcanin", "_blank");
+      // window.open("https://github.com/trovcanin", "_blank");
+      renderGithub();
       
       break;
       case "projects":
@@ -180,7 +194,13 @@ function submitListener(e) {
       case "tryhackme":
       renderTryhackme();
       break;
-      
+      case "whoami":
+      renderWhoami();
+      break;
+      case " ":
+      renderEnter();
+      break;
+
   }
   renderNewForm();
 }

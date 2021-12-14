@@ -1,25 +1,37 @@
 
 
-/* *{
-  background-color: #031e11;
-  color:#FFFFFF;
-  
-  
-} */
+
 
 
 
 body{
   /* background-color: black; */
-  background-color: #01013b;
-background-image: linear-gradient(90deg, #01013b 60%, #010108 100%);
+  /* background-color: #01013b;
+background-image: linear-gradient(90deg, #01013b 60%, #010108 100%); */
 
-  color: #45D298;
+  /* color: #45D298; */
+  /* background-color: #202124; */
+  /* background-color:#011627; */
+  color:#0BE4DC;
+  background-color: #030D22;
+  
+
 }
-/* .prompt {
-  color: #8be9fd;
-  font-size: 16px;
-} */
+.prompt {
+  /* color: #8be9fd;
+  font-size: 16px; */
+  /* background-color: #F6B116;
+  padding:2px;
+  border-radius: 4px;
+  color:white; */
+  /* background-color:rebeccapurple;
+  color:white;
+  padding:2px; */
+  background-color: tomato;
+  border-radius: 4px;
+  padding-left: 3px;
+  padding-left: 3px;
+}
 
 .container {
   max-width: 900px;
@@ -94,12 +106,12 @@ input {
 }
 
 .prompt{
-  color: #fff !important;
-  font-size: 20px !important;
+  /* color: #fff !important;
+  
   background:#b92222;
   padding-right:10px;
-  border-radius: 3px;
-  
+  border-radius: 3px; */
+  font-size: 20px !important;
   
 }
 
@@ -113,21 +125,15 @@ padding:2px 4px 2px 4px;
 } */
 
 
-
-
-
-
-
-
 .shimmer {
 		
 		color: rgba(255, 255, 255, 0.1);
 		background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
 		background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
 		background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-		-webkit-background-size: 125px 100%;
-		-moz-background-size: 125px 100%;
-		background-size: 125px 100%;
+		-webkit-background-size: 200px 100%;
+		-moz-background-size: 200px 100%;
+		background-size: 200px 100%;
 		-webkit-background-clip: text;
 		-moz-background-clip: text;
 		background-clip: text;

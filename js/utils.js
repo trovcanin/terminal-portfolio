@@ -8,7 +8,10 @@ function renderNewForm() {
   newForm.id = "command";
   const span = document.createElement("span");
   span.className = "prompt";
-  span.innerText = "[user@tarik ~]$ ➜"; //ovo sam promijenio
+  span.style.color = "white"
+  span.style.backgroundColor = "#9714DE"
+  
+  span.innerText = "guest@term.tarik ~$"; //ovo sam promijenio
   
  
   const newInput = document.createElement("input");
