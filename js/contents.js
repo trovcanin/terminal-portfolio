@@ -136,7 +136,7 @@ const contents = {
       .map(
         (command) => `
        
-       <div class="help-flex" style="color:#FFA500"> 
+       <div class="help-flex" style="color:#267CF7"> 
        
         <p class="command">${command.command}</p> 
      
@@ -159,19 +159,19 @@ const contents = {
   `,
     certifications: `
   <br />
-  <div class="certs" style="color:#FFA500">
+  <div class="certs" style="color:#CFD5BD">
 
-  <div class="skill">CompTIA Pentest+ <span style="color:#9714DE">THM</span></div>
-  <div class="skill">Complete Beginner <span style="color:#9714DE">THM</span></div>
-  <div class="skill">Presecurity Learning Path <span style="color:#9714DE">THM</span></div>
-  <div class="skill">Web Fundamentals <span style="color:#9714DE">THM</span></div>
-  <div class="skill">Jr. Penetration Tester <span style="color:#9714DE">THM</span></div>
-  <div class="skill">Cyber Defense <span style="color:#9714DE">THM</span></div>
-  <div class="skill">Responsive Web Design <span style="color:#9714DE">FCC</span></div>
-  <div class="skill">Javascript Algorithms and Data Structures <span style="color:#9714DE">FCC</span></div>
-  <div class="skill">Front End Development Libraries <span style="color:#9714DE">FCC</span></div>
-  <div class="skill">Back End Development APIs <span style="color:#9714DE">FCC</span></div>
-  <div class="skill">Scientific Computing with Python <span style="color:#9714DE">FCC</span></div>
+  <div class="skill"><span style="color:#267CF7">TryHackMe </span>CompTIA Pentest+</div>
+  <div class="skill"><span style="color:#267CF7">TryHackMe </span>Complete Beginner </div>
+  <div class="skill"><span style="color:#267CF7">TryHackMe </span>Presecurity Learning Path</div>
+  <div class="skill"><span style="color:#267CF7">TryHackMe </span>Web Fundamentals</div>
+  <div class="skill"><span style="color:#267CF7">TryHackMe </span>Jr. Penetration Tester</div>
+  <div class="skill"><span style="color:#267CF7">TryHackMe </span>Cyber Defense</div> </br>
+  <div class="skill"><span style="color:#267CF7">freeCodeCamp </span>Responsive Web Design</div>
+  <div class="skill"><span style="color:#267CF7">freeCodeCamp </span>Javascript Algorithms and Data Structures</div>
+  <div class="skill"><span style="color:#267CF7">freeCodeCamp </span>Front End Development Libraries</div>
+  <div class="skill"><span style="color:#267CF7">freeCodeCamp </span>Back End Development APIs</div>
+  <div class="skill"><span style="color:#267CF7">freeCodeCamp </span>Scientific Computing with Python</div>
   
   <br />
   </div>
