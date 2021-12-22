@@ -106,9 +106,10 @@ const renderWhoami = () => {
 
 
 //enter
-const renderEnter = () => {
-  const enterDiv = createContentElement(contents.enter);
-  output(enterDiv);
+const renderEmpty = () => {
+  const empty = "";
+  const emptyDiv = createContentElement(contents.empty);
+  output(emptyDiv);
 };
 
 //toggle theme
@@ -212,8 +213,8 @@ function submitListener(e) {
       case "whoami":
       renderWhoami();
       break;
-      case " ":
-      renderEnter();
+      case "":
+      renderEmpty();
       break;
 
   }

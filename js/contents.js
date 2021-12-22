@@ -55,6 +55,9 @@ const helpCommands = [
   {
     command:'clear',
     
+  },
+  {
+    command:""
   }
   
 ];
@@ -78,7 +81,7 @@ const projects = [
   {
     name: "Amazon Scraper API",
     description:
-      "Amazon Data Scraper is the easiest wat to get access to product, price, sales and reviews data from Amazon in JSON format.",
+      "Easiest way to get access to product, price, sales and reviews data from Amazon in JSON format.",
     stack: ["NodeJS", "Express", "Scraper API"],
     code:"https://github.com/trovcanin/amazon-scraper-api",
     project:"https://app-amazon-scraper-api.herokuapp.com/"
@@ -131,7 +134,7 @@ const contactMediums = [
 //HELP ==================================================================
 const contents = {
   
-  help: '<br>'+//terminal.css
+  help: //'<br>'+//terminal.css
     helpCommands
       .map(
         (command) => `
@@ -144,12 +147,13 @@ const contents = {
       )
       .join("") +
     `<br>
-      <div class="command">Type one of the commands above. For eg. <b><span style="color: var(--secondary)">about</span></b>
+      <div class="command">Type one of the commands above. For eg. <span style="color: var(--secondary)">about</span>
       
       </div> <br>`,
       
-      about: ` <br/>
-      <div class="about" style="color:#FFA500">
+      about: ` 
+    
+    <div class="about">
     My name is Tarik Rovcanin and I\'m a fullstack developer.
     <br/>
     I love coding in Javascript, and have worked with frameworks like ReactJS, NodeJS, Express, and Puppeteer.
@@ -158,8 +162,8 @@ const contents = {
     
   `,
     certifications: `
-  <br />
-  <div class="certs" style="color:#CFD5BD">
+  
+  <div class="certs">
 
   <div class="skill"><span style="color:#267CF7">TryHackMe </span>CompTIA Pentest+</div>
   <div class="skill"><span style="color:#267CF7">TryHackMe </span>Complete Beginner </div>
@@ -206,15 +210,15 @@ const contents = {
   
   <br />
   `,
-  " ":`<div class="enter"></div>
+  empty:`<div class="enter"></div>
   `
   ,
   skills: `
-  <br />
-  <div class="skills" style="color:#FFA500">
-  <div class="skill"><b>core</b>: HTML, CSS, Javascript and Node.js<br /></div>
-  <div class="skill"><b>frameworks</b>: Express, React, Pupeteer<br /></div>
-  <div class="skill"><b>database</b>: MongoDB, mongoose<br /></div>
+  
+  <div class="skills">
+  <div class="skill">core: HTML, CSS, Javascript and Node.js<br /></div>
+  <div class="skill">frameworks: Express, React, Pupeteer<br /></div>
+  <div class="skill">database: MongoDB, mongoose<br /></div>
   <br />
   </div>
   `
@@ -233,17 +237,20 @@ const contents = {
     ,
 
   projects:
-    `<h3>My Projects ↓</h3>` +
+    //`<h3>My Projects ↓</h3>` +
     projects
       .map(
         (project) => 
-        `<br>
-        <div class="command" style="color:#FFA500">
-        <b class="command">${
-          project.name
-        }</b> - <b>${project.stack.join(", ")}</b> -> <<a href="${project.code}" target="_blank" style="color:blue"><code><b class="command"></b>code</a>>
-        <<a href="${project.project}" target="_blank" style="color:blue"><b class="command"></b>website</a>>
-          <p class="meaning">${project.description}</p>
+        `
+        <div class="command">
+        <span class="command" style="color:#267cf7
+        ">${project.name}</span> - <span>${project.stack.join(", ")}</span> [<a href="${project.code}" target="_blank" style="color:#267cf7
+        "><code><span class="command"></span>code</a>]
+        [<a href="${project.project}" target="_blank" style="color:#267cf7
+        "><span class="command"></span>website</a>]
+          
+        <br>
+        <span class="meaning">${project.description}</span>
           
       </div> <br>`
 

@@ -10,7 +10,7 @@ function renderNewForm() {
   // span.style.color = "white"
   // span.style.backgroundColor = "#9714DE"
   
-  span.innerHTML = `<span style="color:red">guest@terminal<span style="color:white">:</span><span style="color:blue">~</span><span style="color:white">$</span></span>`; //ovo sam promijenio
+  span.innerHTML = `<span style="color:red">guest@terminal<span style="color:white">:</span><span style="color:blue">~</span><span style="color:white"># </span></span>`; //ovo sam promijenio
   
  
   const newInput = document.createElement("input");

@@ -33,8 +33,6 @@ body{
   /* padding:0 !important;
   margin:0 !important; */
   background-color: black;
-
-  
   font-size: 15px;
   line-height: 1.2;
   animation: pulse 5s linear infinite;
@@ -85,6 +83,7 @@ main {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  
 }
 
 main::-webkit-scrollbar {
@@ -108,7 +107,7 @@ input {
   background-color: transparent;
   border: 0;
   outline: 0;
-  margin-left: 8px;
+  /* margin-left: 8px; */
   color: var(--text-color);
   font-size: 15px;
 }
@@ -153,8 +152,8 @@ input{
   
   /* transform: skewX(0.5deg); */
   /* animation: skew 5s linear infinite; ANIMACIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
-  margin-bottom:120px;
-  margin-top:25px;
+  
+  margin-top:15px;
 }
 
 #command-input{

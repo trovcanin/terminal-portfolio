@@ -1,6 +1,6 @@
 /* custom scrollbar */
 ::-webkit-scrollbar {
-    width: 22px;
+    width: 18px;
   }
   
   ::-webkit-scrollbar-track {
@@ -8,8 +8,8 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: #b9b9bd;
-    border-radius: 5px;
+    background-color: #575757;
+    border-radius: 15px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
