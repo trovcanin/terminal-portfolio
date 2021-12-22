@@ -1,6 +1,5 @@
 // date
-var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+//document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
 //
 
 function renderNewForm() {
@@ -8,10 +7,10 @@ function renderNewForm() {
   newForm.id = "command";
   const span = document.createElement("span");
   span.className = "prompt";
-  span.style.color = "white"
-  span.style.backgroundColor = "#9714DE"
+  // span.style.color = "white"
+  // span.style.backgroundColor = "#9714DE"
   
-  span.innerText = "guest@term.tarik ~$"; //ovo sam promijenio
+  span.innerHTML = `<span style="color:red">guest@terminalio<span style="color:white">:</span><span style="color:blue">~</span><span style="color:white">$</span></span>`; //ovo sam promijenio
   
  
   const newInput = document.createElement("input");
@@ -40,9 +39,36 @@ function renderNewForm() {
 }
 
 function removeAllMainNodes() {
+
   while (mainElement.firstChild) {
-    mainElement.removeChild(mainElement.firstChild);
+    mainElement.removeChild(mainElement.firstChild);  
   }
+  
+  if(obrisiOstalo != null){
+    obrisiOstalo.remove()
+  }
+  
+  if(vrh != null){
+    vrh.remove()
+  }
+
+  if(sve_iznad_inputa != null){
+    sve_iznad_inputa.remove()
+  }
+
+  if(datumcic != null){
+    datumcic.remove()
+  }
+
+  if(badge != null){
+    badge.remove()
+  }
+
+  if(verzija_portfolio != null){
+    verzija_portfolio.remove()
+  }
+
+  
 }
 
 const checkCtrlL = (e) => {

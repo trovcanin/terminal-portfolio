@@ -1,8 +1,21 @@
 <html lang="en">
   <head>
+
+    <!-- Hotjar Tracking Code for Terminal Portfolio -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:2743810,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/terminal-icon.png">
     <link rel="stylesheet" href="css/styles.css" />
     
     <link
@@ -16,18 +29,24 @@
     <div id="terminal">
       
       <div class="vrh">  
-        <div id="text" ></div>
         
-        <span>
+        
+        <!-- <span id="datumcic">
           <p>[<span id="datetime" style="padding-right: 2px; margin-top: 20px;">
           </span>]</p> 
-        <script src="https://tryhackme.com/badge/695923"></script>
+        </span> -->
         
-      </div>                                             
+          <!-- TRYHACKME BADGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-->
+          <span id="badge">
+            <script src="https://tryhackme.com/badge/695923"></script>
+          </span>
+          
+        
+                                                  
                         
-      <h3 class="home-welcome" style="color:#9714DE">#Terminal Portfolio v2.5.3</h3>
+      <h3 id="verzija_portfolio">#Terminal Portfolio v2.5.3</h3>
       
-     <div class="terminal-headline shimmer" style="font-size: 20px; color:#E0267B">                                                 
+     <div class="terminal-headline shimmer" id="mrs" style="font-size: 18px; color:#E0267B">                                                 
 <pre>
  _____           _ _        __                           _       
 /__   \__ _ _ __(_) | __   /__\ _____   _____ __ _ _ __ (_)_ __  
@@ -36,13 +55,15 @@
  \/   \__,_|_|  |_|_|\_\ \/ \_/\___/ \_/ \___\__,_|_| |_|_|_| |_|
                                                                                                                                          
 </pre>
-
+</div> 
                                                              
     </div>
                                                                                                        
     <div class="uvod">
+
+      <div id="sve_iznad_inputa">
                         
-        <h3 class="home-copyright"><span style="color:#9711A9">Copyright (c) </span><span style="color:#0BE4DC">2021 Tarik Rovcanin.<span> 
+        <h3 class="home-copyright"><span>Copyright (c) </span><span>2021 Tarik Rovcanin.<span> 
           
         All rights reserved</span>
         </h3>
@@ -51,13 +72,15 @@
         
         <h3 class="home-documentation">
           
-          Type <span class="command-help">'<span class="blinking-help" style="color:#F6B116">help</span>'</span> to see a list of available commands.
+          Type <span class="command-help">'<span class="blinking-help">help</span>'</span> to see a list of available commands.
        
         </h3>
         <h3>===============</h3>
+
+      </div>
         <main>
           <form id="command">
-            <span class="prompt" style="color:white;background-color: #9714DE; padding:2px">guest@tarik ~$</span>
+            <span class="prompt">guest@terminal<span style="color:white">:</span><span style="color:blue">~</span><span style="color:white">$</span></span>
             <input
               type="command"
               id="command-input"

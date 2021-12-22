@@ -1,6 +1,21 @@
 let form = document.getElementById("command");
 let input = document.getElementById("command-input");
-const mainElement = document.querySelector("main");
+const mainElement = document.querySelector("main"); // ako hoces da vratis na prethodno ubaci main umjesto body
+
+//
+
+
+const obrisiOstalo = document.querySelector("pre")
+const vrh = document.getElementById("vrh")
+const sve_iznad_inputa = document.getElementById("sve_iznad_inputa")
+const badge = document.getElementById("badge")
+const home_welcome = document.getElementById("datetime")
+
+const datumcic = document.getElementById("datumcic")
+const verzija_portfolio = document.getElementById("verzija_portfolio")
+//const home_welcome = document.getElementById("datetime")
+
+//
 const changeTypeButton = document.getElementById("change-type");
 
 //dodatno naknadno -> terminal

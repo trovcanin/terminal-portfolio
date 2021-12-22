@@ -1,19 +1,24 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css"); */
 
+
+@font-face {
+  font-family: "Bitstream Vera Sans Mono";
+  src: url(/fonts/VeraMono.ttf);
+  /* src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+  url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+  url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg"); */
+  }
+
+
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Consolas", sans-serif;
+  font-family: "Bitstream Vera Sans Mono", sans-serif;
   
 }
 
-.portfolio_top{
-  color:#fff;
-}
-.vrh{
-  color:#9a9a9b
-}
+
 h1,h2,h3,h4,h5 {
   font-size:18px;
   font-weight: normal;
@@ -29,7 +34,7 @@ body{
   margin:0 !important; */
   background-color: black;
 
-  color: white;
+  
   font-size: 15px;
   line-height: 1.2;
   animation: pulse 5s linear infinite;
@@ -149,6 +154,7 @@ input{
   /* transform: skewX(0.5deg); */
   /* animation: skew 5s linear infinite; ANIMACIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
   margin-bottom:120px;
+  margin-top:25px;
 }
 
 #command-input{

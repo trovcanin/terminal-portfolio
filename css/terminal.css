@@ -1,188 +1,192 @@
+/* @font-face {
+  font-family: "CustomFont";
+  src: url("https://yoursite.com/css/fonts/CustomFont.eot");
+  src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
+  url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
+  url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
+  } */
 
-
-
-
-
-
-body{
-  /* background-color: black; */
-  /* background-color: #01013b;
-background-image: linear-gradient(90deg, #01013b 60%, #010108 100%); */
-
-  /* color: #45D298; */
-  /* background-color: #202124; */
-  /* background-color:#011627; */
-  color:#0BE4DC;
-  background-color: #030D22;
   
 
-}
-.prompt {
-  /* color: #8be9fd;
-  font-size: 16px; */
-  /* background-color: #F6B116;
-  padding:2px;
-  border-radius: 4px;
-  color:white; */
-  /* background-color:rebeccapurple;
-  color:white;
-  padding:2px; */
-  background-color: tomato;
-  border-radius: 4px;
-  padding-left: 3px;
-  padding-left: 3px;
-}
 
-.container {
-  max-width: 900px;
-  /* margin: auto;
-  display: flex;
-  flex-direction: column; */
-  height: 100vh;
-  /* justify-content: center;
-  align-items: center; */
-  padding: 8px;
-}
-
-main {
-  width: 100%;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-main::-webkit-scrollbar {
-  display: none;
-}
-
-.hidden {
-  display: none;
-}
-
-/* .cursor {
-  font-weight: 700;
-  animation: blink 1s step-end infinite;
-} */
-
-.help {
-  color: var(--text-color);
-}
-
-input {
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  margin-left: 8px;
-  color: var(--text-color);
-  font-size: 15px;
-}
-
-.command {
-  font-size: 18px;
-  color: var(--text_color);
-}
-
-.help-flex {
-  display: flex;
-  justify-content: flex-start;
- 
+  body{
+    /* background-color: black; */
+    /* background-color: #01013b;
+  background-image: linear-gradient(90deg, #01013b 60%, #010108 100%); */
   
-}
-
-
-
-
-/*      ZADNJE SMINKANJE       */
-
-
-.home-copyright{
-  /* background:red; */
-}
-.home-welcome{
-/* background:blue; */
-}
-.home-documentation{
-  /* background:yellow; */
-}
-
-.prompt{
-  /* color: #fff !important;
+    /* color: #45D298; */
+    /* background-color: #202124; */
+    /* background-color:#011627; */
+    color:#CFD5BD;
+    background-color: #030D22;
+    width: 100%;
+    
   
-  background:#b92222;
-  padding-right:10px;
-  border-radius: 3px; */
-  font-size: 20px !important;
+  }
+  .prompt {
+    /* color: #8be9fd;
+    font-size: 16px; */
+    /* background-color: #F6B116;
+    padding:2px;
+    border-radius: 4px;
+    color:white; */
+    /* background-color:rebeccapurple;
+    color:white;
+    padding:2px; */
+    color:red
+    
+  }
   
-}
-
-/* .command-help{
-background:violet;
-padding:2px 4px 2px 4px;
-}
-.command-clear{
-background:sandybrown;
-padding:2px 4px 2px 4px;
-} */
-
-
-.shimmer {
-		
-		color: rgba(255, 255, 255, 0.1);
-		background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-		background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-		background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-		-webkit-background-size: 200px 100%;
-		-moz-background-size: 200px 100%;
-		background-size: 200px 100%;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
-		-webkit-animation-name: shimmer;
-		-moz-animation-name: shimmer;
-		animation-name: shimmer;
-		-webkit-animation-duration: 3s;
-		-moz-animation-duration: 3s;
-		animation-duration: 3s;
-		-webkit-animation-iteration-count: infinite;
-		-moz-animation-iteration-count: infinite;
-		animation-iteration-count: infinite;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		background-color: #222;
-}
-
-@-moz-keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right;
-		}
-}
-
-@-webkit-keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right;
-		}
-}
-
-@-o-keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right;
-		}
-}
-
-@keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right;
-		}
-}
+  .container {
+    max-width: 900px;
+    /* margin: auto;
+    display: flex;
+    flex-direction: column; */
+    height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+    padding: 8px;
+  }
+  
+  main {
+    width: 100%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  main::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* .cursor {
+    font-weight: 700;
+    animation: blink 1s step-end infinite;
+  } */
+  
+  .help {
+    color: var(--text-color);
+  }
+  
+  input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    margin-left: 8px;
+    color: var(--text-color);
+    font-size: 15px;
+  }
+  
+  .command {
+    font-size: 18px;
+    color: var(--text_color);
+  }
+  
+  .help-flex {
+    display: flex;
+    justify-content: flex-start;
+   
+    
+  }
+  
+  
+  
+  
+  /*      ZADNJE SMINKANJE       */
+  
+  
+  .home-copyright{
+    /* background:red; */
+  }
+  .home-welcome{
+  /* background:blue; */
+  }
+  .home-documentation{
+    /* background:yellow; */
+  }
+  
+  .prompt{
+    /* color: #fff !important;
+    
+    background:#b92222;
+    padding-right:10px;
+    border-radius: 3px; */
+    font-size: 20px !important;
+    
+  }
+  
+  /* .command-help{
+  background:violet;
+  padding:2px 4px 2px 4px;
+  }
+  .command-clear{
+  background:sandybrown;
+  padding:2px 4px 2px 4px;
+  } */
+  
+  
+  .shimmer {
+      
+      color: rgba(255, 255, 255, 0.1);
+      background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+      background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+      background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+      -webkit-background-size: 200px 100%;
+      -moz-background-size: 200px 100%;
+      background-size: 200px 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      -webkit-animation-name: shimmer;
+      -moz-animation-name: shimmer;
+      animation-name: shimmer;
+      -webkit-animation-duration: 3s;
+      -moz-animation-duration: 3s;
+      animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-color: #222;
+  }
+  
+  @-moz-keyframes shimmer {
+      0% {
+          background-position: top left;
+      }
+      100% {
+          background-position: top right;
+      }
+  }
+  
+  @-webkit-keyframes shimmer {
+      0% {
+          background-position: top left;
+      }
+      100% {
+          background-position: top right;
+      }
+  }
+  
+  @-o-keyframes shimmer {
+      0% {
+          background-position: top left;
+      }
+      100% {
+          background-position: top right;
+      }
+  }
+  
+  @keyframes shimmer {
+      0% {
+          background-position: top left;
+      }
+      100% {
+          background-position: top right;
+      }
+  }
