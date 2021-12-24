@@ -1,3 +1,6 @@
+
+
+
 //HELP COMMANDS============================================
 
 const helpCommands = [
@@ -43,7 +46,12 @@ const helpCommands = [
   {
     command: "whoami",
     
-  },
+  }
+  ,
+  {
+    command:"history"
+  }
+  ,
   // {
   //   command:'ls',
     
@@ -224,20 +232,8 @@ const contents = {
   <div class="skill"><span style="color:#267CF7">database</span>: mongoose, basic sql<br /></div>
   <br />
   </div>
-  `
-  // certifications: '<br>'+//terminal.css
-  // certifications
-  //   .map(
-  //     (cert) => `
-     
-  //    <div> 
-     
-  //     <p class="certifications">${cert.cert}</p> 
-   
-  //   </div>`
-  //   )
-    
-    ,
+  `,
+  
 
   projects:
     //`<h3>My Projects ↓</h3>` +

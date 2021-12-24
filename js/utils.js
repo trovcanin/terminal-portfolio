@@ -90,3 +90,8 @@ const createContentElement = (content) => {
   return div;
 };
 
+
+// INPUT ARRAY HISTORY
+
+
+

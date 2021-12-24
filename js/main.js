@@ -145,8 +145,32 @@ const exitScreen = () => {
   
 //   window.location = "assets/tarikcv.pdf"
 // }
+let historija = [] 
+const renderHistory = () => {
+
+  historija = historija.filter(v=>v!=''); //remove empty inputs
+  const historyDiv = createContentElement(historija.map((element, index) => 
+  `
+  <div class="history" style="color:#cfd5bd"> 
+      <span>${index} &nbsp${element}</span> 
+  </div>
+  
+  
+  ` ).join(""));
+
+  output(historyDiv);
+
+  
+
+}
+
+
 
 function submitListener(e) {
+
+
+historija.push(input.value) // ubaceno vezano za historiju
+// console.log(historija) //ubaceno vezano za historiju
   e.preventDefault();
   switch (input.value.toLowerCase()) {
       case "help":
@@ -194,9 +218,7 @@ function submitListener(e) {
       case "retro":
       retroTheme();
       break;
-      default:
-      renderCommandNotFound();
-      break;
+     
 
       case"certs":
       renderCertifications();
@@ -217,7 +239,17 @@ function submitListener(e) {
       case "":
       renderEmpty();
       break;
+      case "history":
+      renderHistory();
+      console.log(historija)
+      break;
+      default:
+      renderCommandNotFound();
+      
 
   }
   renderNewForm();
 }
+
+
+
