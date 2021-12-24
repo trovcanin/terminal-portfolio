@@ -27,17 +27,7 @@ h1,h2,h3,h4,h5 {
 }
 
 
-body{
-  font-size:18px;
-  font-weight: normal;
-  /* padding:0 !important;
-  margin:0 !important; */
-  background-color: black;
-  font-size: 15px;
-  line-height: 1.2;
-  animation: pulse 5s linear infinite;
-   
-}
+
 
 h1 {
   color: var(--primary);
@@ -72,7 +62,7 @@ ul {
   /* margin: auto;
   display: flex;
   flex-direction: column; */
-  height: 100vh;
+  /* height: 100vh; */
   /* justify-content: center;
   align-items: center; */
   padding: 8px;
@@ -90,9 +80,9 @@ main::-webkit-scrollbar {
   display: none;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 /* .cursor {
   font-weight: 700;
@@ -152,8 +142,10 @@ input{
   
   /* transform: skewX(0.5deg); */
   /* animation: skew 5s linear infinite; ANIMACIJEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
-  
+ 
   margin-top:15px;
+
+  
 }
 
 #command-input{

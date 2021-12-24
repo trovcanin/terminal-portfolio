@@ -44,17 +44,20 @@ const helpCommands = [
     command: "whoami",
     
   },
-  {
-    command:'ls',
+  // {
+  //   command:'ls',
     
-  },
-  {
-    command:'pwd',
+  // },
+  // {
+  //   command:'pwd',
     
-  },
+  // },
   {
     command:'clear',
     
+  },
+  {
+    command:'exit'
   },
   {
     command:""
@@ -89,7 +92,7 @@ const projects = [
   {
     name: "Movie Rental REST API",
     description:
-      "Real movie rental rest api with users, clients, movies and rentals",
+      "Real movie rental rest api with users, clients, movies and rentals.",
     stack: ["NodeJS", "Express", "JWT", "bcrypt"],
     code:"https://github.com/trovcanin/movie_rental_restapi",
     project:"https://movie-rental-rest-api.herokuapp.com/"
@@ -97,7 +100,7 @@ const projects = [
   {
     name: "Puppeteer Form Spammer",
     description:
-      "Take a look at how to automate form submission using Puppeteer and how to use Puppeteer selectors to target form inputs",
+      "Take a look at how to automate form submission using Puppeteer and how to use Puppeteer selectors to target form inputs.",
     stack: ["NodeJS", "Express", "Puppeteer"],
     code:"https://github.com/trovcanin/puppeteer-form-spammer",
     project:"https://github.com/trovcanin/puppeteer-form-spammer"
@@ -105,7 +108,7 @@ const projects = [
   {
     name: "File Metadata Microservice",
     description:
-      "File Metadata Microservice",
+      "File Metadata Microservice, with node and express.",
     stack: ["NodeJS", "Express"],
     code:"link",
     project:"link"
@@ -154,9 +157,7 @@ const contents = {
       about: ` 
     
     <div class="about">
-    My name is Tarik Rovcanin and I\'m a fullstack developer.
-    <br/>
-    I love coding in Javascript, and have worked with frameworks like ReactJS, NodeJS, Express, and Puppeteer.
+    My name is Tarik Rovcanin and I\'m a self thought developer, tech enthusiast with a passion for cyber security, always trying to improve my skill set.
     <br /><br />
     </div>
     
@@ -182,31 +183,31 @@ const contents = {
   `,
   linkedin:`
   <br />
-  <div class="linkedin" style="color:#FFA500">Opening linkedin...</div>
+  <div class="linkedin">linkedin: <a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:#267CF7">https://www.linkedin.com/in/tarik-rovcanin/</a></div>
   
   <br />
   `,
   whoami:`
   <br />
-  <div class="whoami" style="color:#FFA500">guest</div>
+  <div class="whoami">guest</div>
   
   <br />
   `,
   github:`
   <br />
-  <div class="github" style="color:#FFA500">Opening github...</div>
+  <div class="github">github: <a href="https://github.com/trovcanin" target="_blank" style="color:#267CF7">https://github.com/trovcanin</a></div>
   
   <br />
   `,
   email:`
   <br />
-  <div class="email" style="color:#FFA500">tarik@tarikrovcan.com</div>
+  <div class="email">tarik@tarikrovcan.com</div>
   
   <br />
   `,
   tryhackme:`
   <br />
-  <div class="tryhackme" style="color:#FFA500">Opening tryhackme...</div>
+  <div class="tryhackme" >tryhackme: <a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:#267CF7">https://tryhackme.com/p/tarikr</a></div>
   
   <br />
   `,
@@ -216,9 +217,11 @@ const contents = {
   skills: `
   
   <div class="skills">
-  <div class="skill">core: HTML, CSS, Javascript and Node.js<br /></div>
-  <div class="skill">frameworks: Express, React, Pupeteer<br /></div>
-  <div class="skill">database: MongoDB, mongoose<br /></div>
+  <div class="skill"><span style="color:#267CF7">security</span>: privesc, web exploitation, ctf<br /></div>
+  <div class="skill"><span style="color:#267CF7">linux</span><br /></div>
+  <div class="skill"><span style="color:#267CF7">web</span>: HTML, CSS, Javascript and Node.js<br /></div>
+  <div class="skill"><span style="color:#267CF7">frameworks</span>: Express, React, Pupeteer<br /></div>
+  <div class="skill"><span style="color:#267CF7">database</span>: mongoose, basic sql<br /></div>
   <br />
   </div>
   `

@@ -135,11 +135,11 @@ const renderEmpty = () => {
 // }
 //==================================================
 
-//collapse screen NE RADI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// const exitScreen = () => {
-//   console.log('KONZOLA UGASENA!!!!!!!!!!!')
-//   terminal.classList.add('collapse');
-// }
+
+const exitScreen = () => {
+  const terminal = document.querySelector("body")
+  terminal.classList.add('collapse');  
+}
 //==================================================
 // const downloadCV = () => {
   
@@ -208,6 +208,7 @@ function submitListener(e) {
       renderGithub();
       break;
       case "tryhackme":
+      // window.open("https://tryhackme.com/p/tarikr", "_blank");
       renderTryhackme();
       break;
       case "whoami":
