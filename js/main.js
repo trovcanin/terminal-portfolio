@@ -233,15 +233,15 @@ historija.push(input.value) // ubaceno vezano za historiju
       // window.open("https://tryhackme.com/p/tarikr", "_blank");
       renderTryhackme();
       break;
-      case "whoami":
-      renderWhoami();
-      break;
+      // case "whoami":
+      // renderWhoami();
+      // break;
       case "":
       renderEmpty();
       break;
       case "history":
       renderHistory();
-      console.log(historija)
+      
       break;
       default:
       renderCommandNotFound();

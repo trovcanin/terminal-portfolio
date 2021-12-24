@@ -43,11 +43,11 @@ const helpCommands = [
     command: "email",
     // description: "Change to hacker background",
   },
-  {
-    command: "whoami",
+  // {
+  //   command: "whoami",
     
-  }
-  ,
+  // }
+  // ,
   {
     command:"history"
   }
