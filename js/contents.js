@@ -225,8 +225,9 @@ const contents = {
   skills: `
   
   <div class="skills">
-  <div class="skill"><span style="color:#267CF7">security</span>: privesc, web exploitation, ctf<br /></div>
   <div class="skill"><span style="color:#267CF7">linux</span><br /></div>
+  <div class="skill"><span style="color:#267CF7">security</span>: privesc, web exploitation, ctf<br /></div>
+  
   <div class="skill"><span style="color:#267CF7">web</span>: HTML, CSS, Javascript and Node.js<br /></div>
   <div class="skill"><span style="color:#267CF7">frameworks</span>: Express, React, Pupeteer<br /></div>
   <div class="skill"><span style="color:#267CF7">database</span>: mongoose, basic sql<br /></div>
