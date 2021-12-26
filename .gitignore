@@ -2,3 +2,11 @@ tailwind-default.config.js
 .vscode
 node_modules
 main.js
+utils.js
+sound.js
+content.js
+js/main
+js/config
+js/content
+js/utils
+js/sound
