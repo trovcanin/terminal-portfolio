@@ -1,27 +1,32 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/cascadia-code.min.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Space+Mono&display=swap');
 
 
-@font-face {
+/* @font-face {
   font-family: "Bitstream Vera Sans Mono";
   src: url(/fonts/VeraMono.ttf);
-  /* src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
-  url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
-  url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg"); */
-  }
+
+  } */
+
+
 
 
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Bitstream Vera Sans Mono", sans-serif;
+  /* font-family: "Bitstream Vera Sans Mono", sans-serif; */
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 700;
+  
+
   
 }
 
 
 h1,h2,h3,h4,h5 {
-  font-size:18px;
-  font-weight: normal;
+  font-size:20px;
+  
   /* padding:0 !important;
   margin:0 !important; */
 }
@@ -99,11 +104,11 @@ input {
   outline: 0;
   /* margin-left: 8px; */
   color: var(--text-color);
-  font-size: 15px;
+  /* font-size: 15px; */
 }
 
 .command {
-  font-size: 15px;
+  /* font-size: 15px; */
   
   
 }
