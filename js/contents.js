@@ -215,7 +215,7 @@ const contents = {
   `,
   tryhackme:`
   <br />
-  <div class="tryhackme" >tryhackme: <a href="https://www.linkedin.com/in/tarik-rovcanin/" target="_blank" style="color:#267CF7">https://tryhackme.com/p/tarikr</a></div>
+  <div class="tryhackme" >tryhackme: <a href="https://tryhackme.com/p/tarikr" target="_blank" style="color:#267CF7">https://tryhackme.com/p/tarikr</a></div>
   
   <br />
   `,
